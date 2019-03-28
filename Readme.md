@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Андрей Волков](https://up.htmlacademy.ru/adaptive/16/user/354109).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Ванчугов](https://htmlacademy.ru/profile/id94761).
 
 ---
 
