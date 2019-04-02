@@ -14,7 +14,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="#">Каталог товаров</a>
+              <a href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-list__item">
               <a href="#">Вязание на заказ</a>
@@ -31,6 +31,113 @@
         </div>
       </nav>
     </header>
+    <main class="page-main">
+      <section class="form">
+        <h1 class="form__title">Вязание на заказ</h1>
+        <p class="form__description">
+          Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+        </p>
+        <form class="form__filters filters" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="filters__field">
+            <legend class="filters__characteristic">
+              <span class="filters__characteristic-title">Тип</span>
+            </legend>
+            <div class="filters__list">
+              <label class="filters__option">
+                <input type="radio" class="filters__input filters__input--radio" name="choice" value="interior" checked>
+                <span class="filters__value">Аксессуар для интерьера</span>
+              </label>
+              <label class="filters__option">
+                <input type="radio" class="filters__input filters__input--radio" name="choice" value="toy">
+                <span class="filters__value">Детская игрушка</span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="filters__field">
+            <legend class="filters__characteristic">
+              <span class="filters__characteristic-title">Цвет</span>
+            </legend>
+            <div class="filters__list">
+              <label class="filters__option">
+                <input type="checkbox" class="filters__input filters__input--checkbox" name="white" checked>
+                <span class="filters__value">Белый</span>
+              </label>
+              <label class="filters__option">
+                <input type="checkbox" class="filters__input filters__input--checkbox" name="gray" checked>
+                <span class="filters__value">Серый</span>
+              </label>
+              <label class="filters__option">
+                <input type="checkbox" class="filters__input filters__input--checkbox" name="tiffani">
+                <span class="filters__value">«Тиффани»</span>
+              </label>
+              <label class="filters__option">
+                <input type="checkbox" class="filters__input filters__input--checkbox" name="black">
+                <span class="filters__value">Черный</span>
+              </label>
+              <label class="filters__option">
+                <input type="checkbox" class="filters__input filters__input--checkbox" name="pink">
+                <span class="filters__value">Розовый</span>
+              </label>
+              <label class="filters__option">
+                <input type="checkbox" class="filters__input filters__input--checkbox" name="orange">
+                <span class="filters__value">Оранжевый</span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="filters__field">
+            <legend class="filters__characteristic">
+              <span class="filters__characteristic-title">ФИО</span>
+            </legend>
+            <div class="filters__list">
+              <label class="filters__option">
+                <span class="filters__value">Имя:</span>
+                <input type="text" class="filters__input filters__input--text" placeholder="Введите ваше имя*" name="name" required>
+              </label>
+              <label class="filters__option">
+                <span class="filters__value">Фамилия:</span>
+                <input type="text" class="filters__input filters__input--text" placeholder="Укажите фамилию*" name="lastname" required>
+              </label>
+              <label class="filters__option">
+                <span class="filters__value">Отчество:</span>
+                <input type="text" class="filters__input filters__input--text" placeholder="Отчество, если желаете" name="patronymic">
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="filters__field">
+            <legend class="filters__characteristic">
+              <span class="filters__characteristic-title">ТЕЛ</span>
+            </legend>
+            <div class="filters__list">
+              <label class="filters__option">
+                <input type="tel" class="filters__input filters__input--phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="phone" required>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="filters__field">
+            <legend class="filters__characteristic">
+              <span class="filters__characteristic-title">E-MAIL</span>
+            </legend>
+            <div class="filters__list">
+              <label class="filters__option">
+                <input type="email" class="filters__input filters__input--email" placeholder="Ваш Email*" name="email" required>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="filters__field">
+            <legend class="filters__characteristic">
+              <span class="filters__characteristic-title">ДОП</span>
+            </legend>
+            <div class="filters__list">
+              <label class="filters__option">
+                <textarea class="filters__input filters__input--area" name="add" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </label>
+            </div>
+          </fieldset>
+          <p class="filters__description">*Поля обязательны для заполнения</p>
+          <button type="submit" class="filters__button button">ОТПРАВИТЬ ЗАКАЗ</button>
+        </form>
+      </section>
+    </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__social social">
