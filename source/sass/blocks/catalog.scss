@@ -1,6 +1,6 @@
 .catalog__title {
   margin: 0;
-  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 27px;
   line-height: 30px;
   font-weight: bold;
@@ -20,13 +20,15 @@
 
 .catalog__link {
   color: rgba(0, 0, 0, 1);
-  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
+
   &:hover {
     color: rgba(0, 0, 0, 0.6);
   }
+
   &:active {
     color: rgba(0, 0, 0, 0.3);
   }
@@ -34,6 +36,7 @@
 
 .catalog__title-item {
   margin: 0;
+
   &:active {
     color: rgba(0, 0, 0, 0.3);
   }
@@ -41,7 +44,7 @@
 
 .catalog__description {
   margin: 0;
-  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 30px;
   font-weight: normal;
@@ -50,7 +53,7 @@
 
 .catalog__price {
   margin: 0;
-  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 24px;
   font-weight: bold;
