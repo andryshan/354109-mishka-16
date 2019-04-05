@@ -1,0 +1,35 @@
+.contacts__title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.contacts__wrapper-description {
+  color: #444444;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.contacts__email-text {
+  color: #444444;
+  border-bottom: 1px solid #62d1ba;
+
+  &:hover {
+    color: #62d1ba;
+    border-bottom: 1px solid #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.contacts__adress-text {
+  margin: 0;
+}
+
+.contacts__map-picture {
+  margin: 0;
+}
