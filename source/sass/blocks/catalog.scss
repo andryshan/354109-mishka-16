@@ -1,10 +1,8 @@
 .catalog__title {
   margin: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 27px;
   line-height: 30px;
   font-weight: bold;
-  color: rgba(0, 0, 0, 1);
   background-color: #f1f1f1;
 }
 
@@ -19,18 +17,17 @@
 }
 
 .catalog__link {
-  color: rgba(0, 0, 0, 1);
-  font-family: "Open Sans", "Arial", sans-serif;
+  color: #000000;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
 
   &:hover {
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(#000000, 0.6);
   }
 
   &:active {
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba(#000000, 0.3);
   }
 }
 
@@ -38,26 +35,22 @@
   margin: 0;
 
   &:active {
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba(#000000, 0.3);
   }
 }
 
 .catalog__description {
   margin: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 30px;
   font-weight: normal;
-  color: rgba(0, 0, 0, 1);
 }
 
 .catalog__price {
   margin: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 24px;
   font-weight: bold;
-  color: rgba(0, 0, 0, 1);
 }
 
 .catalog__image {
