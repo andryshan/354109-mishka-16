@@ -1,0 +1,15 @@
+.copyright__text {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 1);
+}
+
+.copyright__link:active .copyright__text {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.copyright__link:active img {
+  opacity: 0.6;
+}

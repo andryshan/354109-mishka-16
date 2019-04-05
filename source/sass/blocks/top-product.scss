@@ -1,0 +1,50 @@
+.top-product__title {
+  margin: 0;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 1);
+}
+
+.top-product__week {
+  margin: 0;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+
+.top-product__description {
+  margin: 0;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #444444;
+}
+
+.top-product__list {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 1);
+  border-collapse: collapse;
+}
+
+.top-product__characteristic,
+.top-product__field {
+  border-bottom: 1px solid #ececec;
+}
+
+.top-product__price {
+  margin: 0;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #444444;
+}
