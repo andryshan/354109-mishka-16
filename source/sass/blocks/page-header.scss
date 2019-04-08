@@ -1,9 +1,36 @@
 .page-header__logo {
+  height: 35px;
+
   &:hover {
     opacity: 0.6;
   }
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .page-header__logo {
+    height: 46px;
+    width: 113px;
+  }
+
+  .page-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-header__logo {
+    height: 72px;
+    width: 149px;
   }
 }

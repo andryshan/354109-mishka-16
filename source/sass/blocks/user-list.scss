@@ -19,3 +19,10 @@
     color: rgba(#000000, 0.3);
   }
 }
+
+@media (min-width: 768px) {
+  .user-list {
+    width: 350px;
+    display: flex;
+  }
+}
