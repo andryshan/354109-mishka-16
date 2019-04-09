@@ -24,5 +24,12 @@
   .user-list {
     width: 350px;
     display: flex;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1150px) {
+  .user-list {
+    margin-left: 0;
   }
 }

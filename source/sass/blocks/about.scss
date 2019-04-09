@@ -17,3 +17,62 @@
 .about__description {
   margin: 0;
 }
+
+.about__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .about__wrapper {
+    width: 668px;
+  }
+
+  .about__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .about__item {
+    display: flex;
+    width: 334px;
+  }
+
+  .about__item--handmade {
+    order: 1;
+  }
+
+  .about__item--scandinavian {
+    order: 2;
+  }
+
+  .about__item--native {
+    order: 3;
+  }
+
+  .about__item--likes {
+    order: 4;
+  }
+
+  .about__item--gift {
+    order: 5;
+  }
+}
+
+@media (min-width: 1150px) {
+  .about__wrapper {
+    width: 668px;
+  }
+
+  .about__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
