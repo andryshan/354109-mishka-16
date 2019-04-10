@@ -1,3 +1,30 @@
 .page-footer {
   background-color: #f1f1f1;
 }
+
+.page-footer__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.social__list {
+  display: flex;
+}
+
+.page-footer__copyright {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .page-footer__wrapper {
+    width: 668px;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-footer__wrapper {
+    width: 1150px;
+  }
+}

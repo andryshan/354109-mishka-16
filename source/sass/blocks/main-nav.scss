@@ -1,0 +1,30 @@
+.main-nav {
+  width: 260px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    width: 668px;
+  }
+
+  .main-nav__wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: 1150px) {
+  .main-nav {
+    width: 1050px;
+  }
+
+  .main-nav__wrapper {
+    justify-content: space-between;
+  }
+}

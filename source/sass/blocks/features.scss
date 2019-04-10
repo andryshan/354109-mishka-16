@@ -3,6 +3,9 @@
   font-size: 27px;
   line-height: 30px;
   font-weight: bold;
+  width: 260px;
+  align-self: center;
+  text-align: center;
 }
 
 .features__list {
@@ -30,4 +33,50 @@
 
 .features__item:active .features__item-link {
   opacity: 0.3;
+}
+
+.features__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .features__wrapper {
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .features__list {
+    display: flex;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .features__item {
+    width: 334px;
+  }
+
+  .features__title {
+    width: 520px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .features__wrapper {
+    width: 1050px;
+  }
+
+  .features__item {
+    width: 525px;
+  }
+
+  .features__title {
+    width: 650px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

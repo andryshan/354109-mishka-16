@@ -18,3 +18,21 @@
     color: rgba(#000000, 0.3);
   }
 }
+
+@media (min-width: 768px) {
+  .site-list {
+    width: 320px;
+    display: flex;
+    order: 1;
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .site-list {
+    font-size: 17px;
+    line-height: 24px;
+    order: 0;
+  }
+}

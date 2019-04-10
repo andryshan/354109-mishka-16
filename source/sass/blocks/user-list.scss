@@ -19,3 +19,17 @@
     color: rgba(#000000, 0.3);
   }
 }
+
+@media (min-width: 768px) {
+  .user-list {
+    width: 350px;
+    display: flex;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1150px) {
+  .user-list {
+    margin-left: 0;
+  }
+}
