@@ -68,7 +68,9 @@
 
 @media (min-width: 1150px) {
   .about__wrapper {
-    width: 668px;
+    width: 1050px;
+    padding-left: 175px;
+    box-sizing: border-box;
   }
 
   .about__title {

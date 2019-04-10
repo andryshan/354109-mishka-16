@@ -4,6 +4,8 @@
   line-height: 30px;
   font-weight: bold;
   background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
 }
 
 .form__description {
@@ -11,4 +13,41 @@
   font-size: 13px;
   line-height: 24px;
   font-weight: normal;
+}
+
+.form__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .form__wrapper {
+    width: 668px;
+  }
+
+  .form__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .form__description {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .form__wrapper {
+    width: 1050px;
+  }
+
+  .form__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .form__description {
+    padding-left: 175px;
+    width: 700px;
+  }
 }

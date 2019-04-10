@@ -29,4 +29,86 @@
 .reviews__next {
   background-color: white;
   border: 1px solid #ececec;
+  cursor: pointer;
+}
+
+.reviews__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.reviews__buttons-wrapper {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .reviews__wrapper-slider {
+    display: flex;
+  }
+
+  .reviews__title {
+    font-size: 43px;
+    line-height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .reviews__text {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .reviews__wrapper {
+    width: 668px;
+    position: relative;
+  }
+
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__button {
+    width: 175px;
+    order: -1;
+    margin-left: auto;
+  }
+
+  .reviews__list {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 668px;
+  }
+
+  .reviews__buttons-wrapper {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .reviews__wrapper {
+    width: 1050px;
+    position: relative;
+    padding-left: 175px;
+    box-sizing: border-box;
+  }
+
+  .reviews__list {
+    width: 1050px;
+  }
+
+  .reviews__item {
+    width: 780px;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
+    position: absolute;
+    left: 175px;
+  }
 }
