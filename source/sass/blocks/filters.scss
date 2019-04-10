@@ -1,6 +1,7 @@
 .filters__field {
   padding: 0;
   margin: 0;
+  border: none;
 }
 
 .filters__characteristic-title {
@@ -45,6 +46,8 @@
 
   &--area {
     border: 2px solid black;
+    width: 250px;
+    min-height: 140px;
   }
 
   &--area:hover {
@@ -53,5 +56,97 @@
 
   &--area:focus {
     border: 2px solid #62d1ba;
+  }
+}
+
+.filters__input--text,
+.filters__input--phone,
+.filters__input--email,
+.filters__input--area {
+  width: 100%;
+}
+
+.filters__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.filters__value--fio {
+  display: flex;
+}
+
+.filters__button {
+  width: 260px;
+}
+
+@media (min-width: 768px) {
+  .filters__value {
+    font-size: 19px;
+    line-height: 18px;
+    font-weight: bold;
+  }
+
+  .filters__field {
+    padding-left: 167px;
+    position: relative;
+  }
+
+  .filters__characteristic {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .filters__list--colors {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .filters__option--fio {
+    display: flex;
+  }
+
+  .filters__input--area {
+    width: 100%;
+  }
+
+  .filters__bottom {
+    display: flex;
+  }
+
+  .filters__button {
+    width: 230px;
+    order: -1;
+    margin-right: auto;
+  }
+
+  .filters__description {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .filters__field--background {
+    background-color: #f1f1f1;
+  }
+
+  .filters__input--phone,
+  .filters__input--email {
+    background-color: #f1f1f1;
+  }
+}
+
+@media (min-width: 1150px) {
+  .filters__field {
+    padding-left: 175px;
+    padding-right: 175px;
+  }
+
+  .filters__button {
+    margin-right: auto;
+    margin-left: 175px;
+  }
+
+  .filters__description {
+    margin-right: 175px;
   }
 }

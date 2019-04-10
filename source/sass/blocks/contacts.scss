@@ -10,6 +10,8 @@
   font-size: 15px;
   line-height: 30px;
   font-weight: normal;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .contacts__email-text {
@@ -28,8 +30,74 @@
 
 .contacts__adress-text {
   margin: 0;
+  width: 150px;
 }
 
 .contacts__map-picture {
   margin: 0;
+}
+
+.contacts__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .contacts__wrapper {
+    width: 668px;
+  }
+
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .contacts__adress-text {
+    width: 180px;
+  }
+
+  .contacts__wrapper-description {
+    justify-content: space-between;
+  }
+
+  .contacts__email-text {
+    display: flex;
+    align-self: flex-start;
+  }
+
+  .contacts__button {
+    width: 230px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1150px) {
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+    width: 275px;
+  }
+
+  .contacts__wrapper {
+    width: 1050px;
+    padding-left: 175px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .contacts__wrapper-description {
+    flex-direction: column;
+  }
+
+  .contacts__button {
+    position: absolute;
+    bottom: 0;
+    left: 175px;
+  }
+
+  .contacts__wrapper-left {
+    margin-right: auto;
+  }
 }
