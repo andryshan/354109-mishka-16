@@ -1,5 +1,8 @@
 .page-header__logo {
   height: 35px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  align-self: center;
 
   &:hover {
     opacity: 0.6;
@@ -10,11 +13,25 @@
   }
 }
 
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__logo-image {
+  width: 86px;
+  height: 35px;
+}
+
 @media (min-width: 768px) {
+  .page-header__logo-image {
+    width: 113px;
+    height: 46px;
+  }
+
   .page-header__logo {
     margin: 0;
     height: 46px;
-    width: 113px;
     position: absolute;
     top: 0;
     left: 0;
@@ -31,9 +48,13 @@
 }
 
 @media (min-width: 1150px) {
+  .page-header__logo-image {
+    width: 149px;
+    height: 72px;
+  }
+
   .page-header__logo {
     height: 72px;
-    width: 149px;
     left: 50%;
   }
 
