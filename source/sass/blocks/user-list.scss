@@ -59,10 +59,34 @@
     display: flex;
     margin-left: auto;
   }
+
+  .user-list__item .user-list__search {
+    font-size: 0;
+    padding: 32px 42px 32px 42px;
+  }
+
+  .user-list__item:first-child {
+    border-left: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+  }
+
+  .user-list__search-icon {
+    top: 37px;
+    left: 34px;
+  }
+
+  .user-list__basket-icon {
+    top: 35px;
+    left: 30px;
+  }
+
+  .user-list__item .user-list__bracket {
+    padding: 32px 0 32px 82px;
+  }
 }
 
 @media (min-width: 1150px) {
   .user-list {
-    margin-left: 0;
+    margin-left: auto;
   }
 }
