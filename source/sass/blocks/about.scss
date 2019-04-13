@@ -3,6 +3,8 @@
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .about__list {
@@ -14,8 +16,28 @@
   font-weight: bold;
 }
 
+.about__item {
+  padding-top: 53px;
+  position: relative;
+}
+
+.about__item::before {
+  position: absolute;
+  content: "";
+}
+
+.about__item--eco::before {
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 37px;
+  background: url("/../img/icon-feature-flower.svg") no-repeat 0 0;
+}
+
 .about__description {
   margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .about__wrapper {
