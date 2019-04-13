@@ -83,6 +83,12 @@
 }
 
 @media (min-width: 768px) {
+  .features {
+    background-image: url("../../img/bg-zigzag-fill.svg");
+    background-repeat: no-repeat;
+    background-position: 0 bottom;
+  }
+
   .features__wrapper {
     width: 668px;
     margin: 0 auto;
