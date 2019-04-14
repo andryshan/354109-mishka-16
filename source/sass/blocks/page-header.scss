@@ -41,6 +41,10 @@
     align-self: flex-start;
     margin-top: 22px;
   }
+
+  .page-header--catalog {
+    background: linear-gradient(to bottom, transparent 88px, #e7e7e7 88px, transparent 89px, #f1f1f1 89px);
+  }
 }
 
 @media (min-width: 1150px) {

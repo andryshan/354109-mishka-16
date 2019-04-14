@@ -3,6 +3,14 @@
   line-height: 18px;
   font-weight: bold;
   color: #000000;
+  padding-top: 6px;
+  padding-right: 29px;
+}
+
+.copyright__link {
+  display: flex;
+  margin-top: 21px;
+  justify-content: center;
 }
 
 .copyright__link:active .copyright__text {
@@ -11,4 +19,10 @@
 
 .copyright__link:active img {
   opacity: 0.6;
+}
+
+@media (min-width: 768px) {
+  .copyright__link {
+    margin-top: 12px;
+  }
 }

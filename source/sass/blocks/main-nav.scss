@@ -59,6 +59,10 @@
   border-bottom: 1px solid #ececec;
 }
 
+.main-nav__delivery {
+  display: none;
+}
+
 
 @media (max-width: 767px) {
   .main-nav--closed .site-list__item {
@@ -73,8 +77,12 @@
     display: none;
   }
 
-  .main-nav__delivery {
-    display: none;
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
+
+  .main-nav--nojs .user-list__item {
+    display: block;
   }
 }
 
@@ -91,6 +99,7 @@
   }
 
   .main-nav__delivery {
+    display: flex;
     font-size: 15px;
     line-height: 24px;
     margin: 0;
