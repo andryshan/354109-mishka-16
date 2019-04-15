@@ -79,13 +79,19 @@
 }
 
 .about__wrapper {
-  width: 260px;
+  width: 81%;
   margin: 0 auto;
+}
+
+@media (min-width: 321px) and (max-width: 767px) {
+  br {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
   .about__wrapper {
-    width: 668px;
+    width: 87%;
     padding-top: 49px;
     padding-bottom: 54px;
   }
