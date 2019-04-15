@@ -50,17 +50,17 @@
             Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
           </p>
           <form class="form__filters filters" method="get" action="https://echo.htmlacademy.ru">
-            <fieldset class="filters__field">
+            <fieldset class="filters__field filters__field--type">
               <legend class="filters__characteristic">
                 <span class="filters__characteristic-title">Тип</span>
               </legend>
               <div class="filters__list">
-                <label class="filters__option">
-                  <input type="radio" class="filters__input filters__input--radio" name="choice" value="interior" checked>
+                <label class="filters__option filters__option--area">
+                  <input type="radio" class="filters__input filters__input--radio visually-hidden" name="choice" value="interior" checked>
                   <span class="filters__value">Аксессуар для интерьера</span>
                 </label>
-                <label class="filters__option">
-                  <input type="radio" class="filters__input filters__input--radio" name="choice" value="toy">
+                <label class="filters__option filters__option--area">
+                  <input type="radio" class="filters__input filters__input--radio visually-hidden" name="choice" value="toy">
                   <span class="filters__value">Детская игрушка</span>
                 </label>
               </div>
@@ -70,33 +70,33 @@
                 <span class="filters__characteristic-title">Цвет</span>
               </legend>
               <div class="filters__list filters__list--colors">
-                <label class="filters__option">
-                  <input type="checkbox" class="filters__input filters__input--checkbox" name="white" checked>
+                <label class="filters__option filters__option--area">
+                  <input type="checkbox" class="filters__input filters__input--checkbox visually-hidden" name="white" checked>
                   <span class="filters__value">Белый</span>
                 </label>
-                <label class="filters__option">
-                  <input type="checkbox" class="filters__input filters__input--checkbox" name="gray" checked>
+                <label class="filters__option filters__option--area">
+                  <input type="checkbox" class="filters__input filters__input--checkbox visually-hidden" name="gray" checked>
                   <span class="filters__value">Серый</span>
                 </label>
-                <label class="filters__option">
-                  <input type="checkbox" class="filters__input filters__input--checkbox" name="tiffani">
+                <label class="filters__option filters__option--area">
+                  <input type="checkbox" class="filters__input filters__input--checkbox visually-hidden" name="tiffani">
                   <span class="filters__value">«Тиффани»</span>
                 </label>
-                <label class="filters__option">
-                  <input type="checkbox" class="filters__input filters__input--checkbox" name="black">
+                <label class="filters__option filters__option--area">
+                  <input type="checkbox" class="filters__input filters__input--checkbox visually-hidden" name="black">
                   <span class="filters__value">Черный</span>
                 </label>
-                <label class="filters__option">
-                  <input type="checkbox" class="filters__input filters__input--checkbox" name="pink">
+                <label class="filters__option filters__option--area">
+                  <input type="checkbox" class="filters__input filters__input--checkbox visually-hidden" name="pink">
                   <span class="filters__value">Розовый</span>
                 </label>
-                <label class="filters__option">
-                  <input type="checkbox" class="filters__input filters__input--checkbox" name="orange">
+                <label class="filters__option filters__option--area">
+                  <input type="checkbox" class="filters__input filters__input--checkbox visually-hidden" name="orange">
                   <span class="filters__value">Оранжевый</span>
                 </label>
               </div>
             </fieldset>
-            <fieldset class="filters__field">
+            <fieldset class="filters__field filters__field--fio">
               <legend class="filters__characteristic">
                 <span class="filters__characteristic-title">ФИО</span>
               </legend>
@@ -115,7 +115,7 @@
                 </label>
               </div>
             </fieldset>
-            <fieldset class="filters__field filters__field--background">
+            <fieldset class="filters__field filters__field--background filters__field--phone">
               <legend class="filters__characteristic">
                 <span class="filters__characteristic-title">ТЕЛ</span>
               </legend>
@@ -125,7 +125,7 @@
                 </label>
               </div>
             </fieldset>
-            <fieldset class="filters__field filters__field--background">
+            <fieldset class="filters__field filters__field--background filters__field--email">
               <legend class="filters__characteristic">
                 <span class="filters__characteristic-title">E-MAIL</span>
               </legend>
@@ -135,7 +135,7 @@
                 </label>
               </div>
             </fieldset>
-            <fieldset class="filters__field">
+            <fieldset class="filters__field filters__field--extra">
               <legend class="filters__characteristic">
                 <span class="filters__characteristic-title">ДОП</span>
               </legend>
@@ -203,5 +203,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/mobileMenu.js"></script>
   </body>
 </html>

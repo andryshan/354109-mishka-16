@@ -2,6 +2,22 @@
   padding: 0;
   margin: 0;
   border: none;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.filters__field::before {
+  position: absolute;
+  height: 1px;
+  width: 76%;
+  top: 14px;
+  right: 0;
+  content: "";
+  background-color: #63d1bb;
+}
+
+.filters__option--area {
+  padding-left: 62px;
 }
 
 .filters__characteristic-title {
@@ -16,6 +32,40 @@
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
+  display: flex;
+  padding: 28px 0 15px 0;
+}
+
+.filters__field--type {
+  padding-top: 12px;
+  margin-bottom: 20px;
+}
+
+.filters__field--type .filters__value {
+  padding: 12px 0 16px 0;
+}
+
+.filters__field--fio .filters__value {
+  padding: 20px 0 14px 0;
+}
+
+.filters__field--fio {
+  margin-bottom: 25px;
+}
+
+.filters__field--phone,
+.filters__field--email {
+  margin-bottom: 29px;
+  padding-top: 9px;
+}
+
+.filters__field--extra {
+  padding-top: 16px;
+  margin-bottom: 8px;
+}
+
+.filters__field--extra .filters__input--area {
+  padding: 13px 13px 13px 13px;
 }
 
 .filters__description {
@@ -23,6 +73,7 @@
   color: #444444;
   font-size: 14px;
   line-height: 16px;
+  margin-bottom: 30px;
 }
 
 .filters__input {
@@ -64,6 +115,8 @@
 .filters__input--email,
 .filters__input--area {
   width: 100%;
+  padding: 0 0 14px 0;
+  box-sizing: border-box;
 }
 
 .filters__list {
@@ -76,7 +129,9 @@
 }
 
 .filters__button {
-  width: 260px;
+  width: 100%;
+  padding: 14px 0 14px 0;
+  margin-bottom: 56px;
 }
 
 @media (min-width: 768px) {
