@@ -1,5 +1,49 @@
+.social {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
 .social__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  width: 155px;
+  box-sizing: border-box;
+}
+
+.social__link {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.social__item {
+  padding-right: 30px;
+}
+
+.social__item:last-child {
+  padding-right: 0;
+}
+
+.social__link:hover path {
+  fill: #46c1ae;
+}
+
+.social__link:active path {
+  opacity: 0.3;
+}
+
+@media (min-width: 768px) {
+  .social {
+    border-bottom: none;
+    padding-top: 13px;
+    padding-bottom: 12px;
+    padding-left: 75px;
+  }
 }

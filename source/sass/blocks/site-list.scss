@@ -19,6 +19,12 @@
   }
 }
 
+@media (max-width: 767px) {
+  .site-list__item:first-child a {
+    border-top: 1px solid #ececec;
+  }
+}
+
 @media (min-width: 768px) {
   .site-list {
     width: 320px;
@@ -26,6 +32,17 @@
     order: 1;
     font-size: 15px;
     line-height: 24px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin-right: auto;
+  }
+
+  .site-list__item:first-child {
+    margin-right: 36px;
+  }
+
+  .site-list__item .site-list__link {
+    padding: 0;
   }
 }
 
@@ -33,6 +50,23 @@
   .site-list {
     font-size: 17px;
     line-height: 24px;
-    order: 0;
+    order: -1;
+    width: 415px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 3%;
+  }
+
+  .site-list__item .site-list__link {
+    padding: 32px 36px 32px 0;
+  }
+
+  .site-list__item:last-child .site-list__link {
+    padding-left: 34px;
+  }
+
+  .site-list__item:first-child {
+    margin-right: 0;
+    border-right: 1px solid #ececec;
   }
 }

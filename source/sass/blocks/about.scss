@@ -3,6 +3,9 @@
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  letter-spacing: -0.01em;
 }
 
 .about__list {
@@ -14,18 +17,78 @@
   font-weight: bold;
 }
 
+.about__item {
+  padding-top: 53px;
+  position: relative;
+}
+
+.about__item svg {
+  position: absolute;
+  content: "";
+
+  path {
+    fill: #63d1bb;
+  }
+}
+
+.about__item--eco svg {
+  width: 32px;
+  height: 37px;
+  top: 14px;
+  left: 8px;
+}
+
+.about__item--scandinavian svg {
+  width: 47px;
+  height: 27px;
+  top: 15px;
+  left: 0;
+}
+
+.about__item--likes svg {
+  width: 34px;
+  height: 27px;
+  top: 20px;
+  left: 7px;
+}
+
+.about__item--handmade svg {
+  width: 35px;
+  height: 34px;
+  top: 17px;
+  left: 3px;
+}
+
+.about__item--native svg {
+  width: 55px;
+  height: 23px;
+  top: 17px;
+  left: -5px;
+}
+
+.about__item--gift svg {
+  width: 33px;
+  height: 32px;
+  top: 16px;
+  left: 3px;
+}
+
 .about__description {
   margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .about__wrapper {
-  width: 260px;
+  width: 81%;
   margin: 0 auto;
 }
 
 @media (min-width: 768px) {
   .about__wrapper {
-    width: 668px;
+    width: 87%;
+    padding-top: 49px;
+    padding-bottom: 54px;
   }
 
   .about__title {
@@ -42,8 +105,38 @@
 
   .about__item {
     display: flex;
-    width: 334px;
+    width: 50%;
   }
+
+  .about__description {
+    padding-top: 32px;
+    padding-bottom: 27px;
+  }
+
+  .about__item--eco svg {
+    top: 32px;
+  }
+
+  .about__item--scandinavian svg {
+    top: 33px;
+  }
+
+  .about__item--likes svg {
+    top: 38px;
+  }
+
+  .about__item--handmade svg {
+    top: 35px;
+  }
+
+  .about__item--native svg {
+    top: 35px;
+  }
+
+  .about__item--gift svg {
+    top: 34px;
+  }
+
 
   .about__item--handmade {
     order: 1;
@@ -71,10 +164,16 @@
     width: 1050px;
     padding-left: 175px;
     box-sizing: border-box;
+    padding-top: 87px;
+    padding-bottom: 59px;
   }
 
   .about__title {
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .about__item {
+    width: 350px;
   }
 }
