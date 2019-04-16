@@ -5,6 +5,7 @@
   font-weight: bold;
   padding-top: 18px;
   padding-bottom: 18px;
+  letter-spacing: -0.01em;
 }
 
 .about__list {
@@ -81,12 +82,6 @@
 .about__wrapper {
   width: 81%;
   margin: 0 auto;
-}
-
-@media (min-width: 321px) and (max-width: 767px) {
-  br {
-    display: none;
-  }
 }
 
 @media (min-width: 768px) {
