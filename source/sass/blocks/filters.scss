@@ -43,6 +43,17 @@
 
 .filters__field--type .filters__value {
   padding: 12px 0 16px 0;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filters__field--colors .filters__value {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
 }
 
 .filters__field--fio .filters__value {
@@ -82,7 +93,7 @@
   border-bottom: 2px solid black;
 
   &::placeholder {
-    color: #444444;
+    color: #cccccc;
     font-size: 17px;
     line-height: 18px;
   }
@@ -134,6 +145,113 @@
   margin-bottom: 56px;
 }
 
+.filters__input--radio ~ span::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -61px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #000000;
+}
+
+.filters__input--radio:checked ~ span::after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: -49px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #62d1ba;
+}
+
+.filters__input--checkbox ~ span::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: -61px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #000000;
+  background-color: transparent;
+}
+
+.filters__input--radio:hover ~ span::before,
+.filters__input--checkbox:hover ~ span::before {
+  border: 2px solid #62d1ba;
+}
+
+.filters__input--radio:active ~ span::before,
+.filters__input--checkbox:active ~ span::before {
+  border: 2px solid #c7c7c7;
+}
+
+.filters__input--checkbox:checked ~ span::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: -52px;
+  width: 22px;
+  height: 16px;
+  background-size: contain;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filters__field--phone .filters__option,
+.filters__field--email .filters__option {
+  position: relative;
+}
+
+.filters__field--phone svg {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 8px;
+  width: 25px;
+  height: 24px;
+  fill: #cccccc;
+}
+
+.filters__field--email svg {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 4px;
+  width: 32px;
+  height: 32px;
+}
+
+.filters__field--email path {
+  fill: #cccccc;
+}
+
+.filters__input:hover ~ svg,
+.filters__input:active ~ svg {
+  path {
+    fill: #62d1ba;
+  }
+}
+
+@-moz-document url-prefix("") {
+  .filters__field::before {
+    top: -16px;
+  }
+
+  .filters__field--extra {
+    padding-top: 16px;
+    margin-bottom: 14px;
+  }
+}
+
+.filters__field--type .filters__list,
+.filters__field--colors .filters__list {
+  align-items: flex-start;
+}
+
 @media (min-width: 768px) {
   .filters__value {
     font-size: 19px;
@@ -148,7 +266,7 @@
 
   .filters__characteristic {
     position: absolute;
-    top: 0;
+    top: 12px;
     left: 0;
   }
 
@@ -159,6 +277,16 @@
 
   .filters__option--fio {
     display: flex;
+    margin-bottom: 19px;
+  }
+
+  .filters__field--fio .filters__list {
+    padding-top: 25px;
+  }
+
+  .filters__field--fio .filters__value {
+    padding: 20px 0 19px 0;
+    margin-right: 25px;
   }
 
   .filters__input--area {
@@ -187,6 +315,133 @@
   .filters__input--phone,
   .filters__input--email {
     background-color: #f1f1f1;
+  }
+
+  .filters__field::before {
+    display: none;
+  }
+
+  .filters__field--type {
+    padding-top: 0;
+    margin-bottom: 31px;
+  }
+
+  .filters__field--type .filters__option--area {
+    padding-left: 80px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-bottom: 20px;
+  }
+
+  .filters__input--radio ~ span::before {
+    top: -3px;
+    left: -81px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .filters__input--radio:checked ~ span::after {
+    top: 14px;
+    left: -64px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .filters__list--colors .filters__option {
+    width: 30%;
+  }
+
+  .filters__field--colors {
+    padding-top: 45px;
+    padding-bottom: 31px;
+  }
+
+  .filters__list--colors .filters__option--area {
+    padding-left: 80px;
+    margin-bottom: 18px;
+  }
+
+  .filters__field--colors .filters__value {
+    padding: 20px 0 20px 0;
+  }
+
+  .filters__list--colors .filters__option--area:nth-child(2n+1) {
+    margin-right: 32px;
+  }
+
+  .filters__input--checkbox ~ span::before {
+    top: 4px;
+    left: -80px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .filters__input--checkbox:checked ~ span::after {
+    top: 19px;
+    left: -70px;
+    width: 36px;
+    height: 25px;
+  }
+
+  .filters__field--colors .filters__characteristic {
+    top: 61px;
+  }
+
+  .filters__input {
+    &::placeholder {
+      color: #cccccc;
+      font-size: 19px;
+      line-height: 18px;
+    }
+  }
+
+  .filters__input--text,
+  .filters__input--phone,
+  .filters__input--email,
+  .filters__input--area {
+    padding: 18px 15px 15px 17px;
+  }
+
+  .filters__field--fio .filters__characteristic {
+    top: 41px;
+  }
+
+  .filters__field--fio {
+    margin-bottom: 31px;
+  }
+
+  .filters__field--phone .filters__list {
+    padding-top: 24px;
+    margin-top: 26px;
+  }
+
+  .filters__field--email .filters__list {
+    padding-top: 24px;
+    margin-bottom: 50px;
+  }
+
+  .filters__field--phone,
+  .filters__field--email {
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+
+  .filters__field--phone .filters__characteristic {
+    top: 60px;
+  }
+
+  .filters__field--email .filters__characteristic {
+    top: 35px;
+  }
+
+  .filters__field--phone svg {
+    top: 11px;
+    right: 26px;
+  }
+
+  .filters__field--email svg {
+    top: 11px;
+    right: 22px;
   }
 }
 
