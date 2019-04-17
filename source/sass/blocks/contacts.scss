@@ -176,6 +176,7 @@
 
   .contacts__wrapper-description {
     flex-direction: column;
+    padding-top: 21px;
   }
 
   .contacts__button {
@@ -204,10 +205,6 @@
   .contacts__title::after {
     top: 28px;
     left: -113px;
-  }
-
-  .contacts__wrapper-description {
-    padding-top: 21px;
   }
 
   .contacts__wrapper-email {
