@@ -23,7 +23,21 @@
   height: 35px;
 }
 
+.page-header__logo-picture {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
 @media (min-width: 768px) {
+  .page-header__logo-picture {
+    width: 45%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    justify-content: flex-start;
+  }
+
   .page-header {
     background: linear-gradient(to bottom, transparent 88px, #e7e7e7 88px, transparent 89px, #f9f9f9 89px);
   }
@@ -61,6 +75,10 @@
   .page-header__logo {
     height: 72px;
     margin-top: 9px;
+    width: auto;
+  }
+
+  .page-header__logo-picture {
     width: auto;
   }
 }

@@ -72,7 +72,11 @@
 
 .filters__field--extra {
   padding-top: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 9px;
+}
+
+.filters__field--extra .filters__characteristic {
+  top: 60px;
 }
 
 .filters__field--extra .filters__input--area {
@@ -142,7 +146,7 @@
 .filters__button {
   width: 100%;
   padding: 14px 0 14px 0;
-  margin-bottom: 56px;
+  margin-bottom: 55px;
 }
 
 .filters__input--radio ~ span::before {
@@ -179,7 +183,9 @@
 }
 
 .filters__input--radio:hover ~ span::before,
-.filters__input--checkbox:hover ~ span::before {
+.filters__input--checkbox:hover ~ span::before,
+.filters__input--radio:focus ~ span::before,
+.filters__input--checkbox:focus ~ span::before {
   border: 2px solid #62d1ba;
 }
 
@@ -301,14 +307,17 @@
     width: 230px;
     order: -1;
     margin-right: auto;
+    margin-bottom: 50px;
   }
 
   .filters__description {
     font-size: 17px;
     line-height: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 
-  .filters__field--background {
+  .filters--background {
     background-color: #f1f1f1;
   }
 
@@ -443,6 +452,16 @@
     top: 11px;
     right: 22px;
   }
+
+  .filters__field--extra {
+    padding-top: 51px;
+    margin-bottom: 45px;
+  }
+
+  .filters__container {
+    width: 87%;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 1150px) {
@@ -454,9 +473,46 @@
   .filters__button {
     margin-right: auto;
     margin-left: 175px;
+    margin-bottom: 48px;
   }
 
   .filters__description {
     margin-right: 175px;
+  }
+
+  .filters__container {
+    width: 1050px;
+  }
+
+  .filters__list--colors .filters__option--area:nth-child(2n+1) {
+    margin-right: 0;
+  }
+
+  .filters__list--colors .filters__option {
+    width: 17.5%;
+  }
+
+  .filters__list--colors {
+    justify-content: space-between;
+  }
+
+  .filters__field--colors.filters__field {
+    padding-right: 140px;
+  }
+
+  .filters__characteristic {
+    left: 60px;
+  }
+
+  .filters__field--phone svg {
+    right: 8px;
+  }
+
+  .filters__field--email svg {
+    right: 4px;
+  }
+
+  .filters__field--extra {
+    margin-bottom: 41px;
   }
 }
