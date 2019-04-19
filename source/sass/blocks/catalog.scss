@@ -104,6 +104,12 @@
   display: flex;
 }
 
+.catalog__image picture {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
 .catalog__image img {
   width: 100%;
   height: 100%;
@@ -177,7 +183,7 @@
 
   .catalog__image img {
     width: 100%;
-    height: 334px;
+    height: 100%;
   }
 
   .catalog__wrapper-title-price {
@@ -225,5 +231,15 @@
   .catalog__image img {
     width: 316px;
     height: 462px;
+  }
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .catalog__description {
+      padding-bottom: 39px;
+    }
+
+    .catalog__item:nth-child(3) .catalog__description {
+      padding-bottom: 15px;
+    }
   }
 }
