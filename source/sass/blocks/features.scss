@@ -30,12 +30,36 @@
   position: relative;
 }
 
+.features__item:hover .features__item-link {
+  padding: 22px 0 33px 29px;
+}
+
 .features__item--interior .features__item-link {
   background-color: #63d1bb;
 }
 
 .features__item--toys .features__item-link {
   background-color: #56c3b2;
+}
+
+.features__item--interior .features__item-link:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: #63d1bb;
+  top: -5px;
+  left: 0;
+}
+
+.features__item--toys .features__item-link:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: #56c3b2;
+  top: -5px;
+  left: 0;
 }
 
 .features__item--interior svg {
@@ -64,6 +88,14 @@
   }
 }
 
+.features__item--interior:hover svg {
+  top: 19px;
+}
+
+.features__item--toys:hover svg {
+  top: 14px;
+}
+
 .features__item:active .features__item-link {
   color: #8be2d0;
 }
@@ -78,7 +110,7 @@
   flex-direction: column;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: 50% -18px;
 }
 
 @media (min-width: 321px) and (max-width: 767px) {
@@ -153,6 +185,18 @@
     background-color: #56c3b2;
     top: -5px;
     left: 0;
+  }
+
+  .features__item:hover .features__item-link {
+    padding: 22px 0 32px 36px;
+  }
+
+  .features__item--interior:hover svg {
+    top: 24px;
+  }
+
+  .features__item--toys:hover svg {
+    top: 26px;
   }
 
   .features__item--interior svg {

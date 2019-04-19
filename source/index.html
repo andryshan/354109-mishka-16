@@ -10,9 +10,11 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <nav class="main-nav main-nav--closed main-nav--nojs">
-          <a href="index.html" class="page-header__logo">
-            <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип магазина Мишка" width="86" height="35">
-          </a>
+          <p class="page-header__logo-picture">
+            <a href="index.html" class="page-header__logo">
+              <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип магазина Мишка" width="86" height="35">
+            </a>
+          </p>
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
@@ -172,14 +174,14 @@
                   <cite class="reviews__author-name">Анастасия Красильникова</cite>
                   <b class="reviews__author-email">@misssssiskras</b>
                 </blockquote>
-                <blockquote class="reviews__item slider__item">
+                <blockquote class="reviews__item slider__item slider__item--hidden">
                   <p class="reviews__text">
                     Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
                   </p>
                   <cite class="reviews__author-name">Анастасия Красильникова</cite>
                   <b class="reviews__author-email">@misssssiskras</b>
                 </blockquote>
-                <blockquote class="reviews__item slider__item">
+                <blockquote class="reviews__item slider__item slider__item--hidden">
                   <p class="reviews__text">
                     Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
                   </p>
@@ -187,8 +189,8 @@
                   <b class="reviews__author-email">@misssssiskras</b>
                 </blockquote>
                 <div class="reviews__buttons-wrapper">
-                  <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-                  <button class="reviews__next" type="button">Следующий отзыв</button>
+                  <button class="reviews__prev" type="button" aria-label="Предыдущий отзыв"></button>
+                  <button class="reviews__next" type="button" aria-label="Следующий отзыв"></button>
                 </div>
               </div>
             </div>
@@ -200,10 +202,14 @@
             <div class="contacts__wrapper-left">
               <h3 class="contacts__title">Контакты</h3>
               <div class="contacts__wrapper-description">
-                <span class="contacts__email">e-mail:</span>
-                <a href="mailto:info@mimimishkashop.ru" class="contacts__email-text">info@mimimishkashop.ru</a>
-                <span class="contacts__adress">адрес:</span>
-                <p class="contacts__adress-text">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+                <div class="contacts__wrapper-email">
+                  <span class="contacts__email">e-mail:</span>
+                  <a href="mailto:info@mimimishkashop.ru" class="contacts__email-text">info@mimimishkashop.ru</a>
+                </div>
+                <div class="contacts__wrapper-adress">
+                  <span class="contacts__adress">адрес:</span>
+                  <p class="contacts__adress-text">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+                </div>
               </div>
             </div>
             <p class="contacts__map-picture">
@@ -263,27 +269,27 @@
         </div>
       </div>
     </footer>
-    <section class="modal-size" style="display: none">
+    <section class="modal-size">
       <div class="modal-size__wrapper">
         <h2 class="modal-size__title">Добавить в корзину</h2>
         <p class="modal-size__description">Выберите размер:</p>
         <form class="modal-size__form" method="get" action="https://echo.htmlacademy.ru">
           <div class="modal-size__list">
             <label class="modal-size__option">
-              <input type="checkbox" class="modal-size__checkbox" name="size" value="S" checked>
+              <input type="checkbox" class="modal-size__checkbox visually-hidden" name="size" value="S" checked>
               <span class="modal-size__value">S</span>
             </label>
             <label class="modal-size__option">
-              <input type="checkbox" class="modal-size__checkbox" name="size" value="M">
+              <input type="checkbox" class="modal-size__checkbox visually-hidden" name="size" value="M">
               <span class="modal-size__value">M</span>
             </label>
             <label class="modal-size__option">
-              <input type="checkbox" class="modal-size__checkbox" name="size" value="L">
+              <input type="checkbox" class="modal-size__checkbox visually-hidden" name="size" value="L">
               <span class="modal-size__value">l</span>
             </label>
           </div>
           <button type="submit" class="modal-size__button">Добавить</button>
-          <button type="button" class="modal-size__close" aria-label="Закрыть форму">Закрыть</button>
+          <button type="button" class="modal-size__close visually-hidden" aria-label="Закрыть форму">Закрыть</button>
         </form>
       </div>
     </section>
