@@ -103,7 +103,7 @@
   display: flex;
 }
 
-.contacts__map-picture iframe {
+.contacts__map-frame {
   position: absolute;
   z-index: 2;
   border: none;
@@ -223,7 +223,7 @@
     margin-bottom: 0;
   }
 
-  .contacts__map-picture iframe {
+  .contacts__map-frame {
     width: 525px;
     height: 457px;
   }

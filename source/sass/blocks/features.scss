@@ -100,6 +100,12 @@
   color: #8be2d0;
 }
 
+.features__item:hover svg {
+  path {
+    fill: #29a592;
+  }
+}
+
 .features__item:active svg {
   opacity: 0.3;
 }
@@ -140,7 +146,6 @@
     bottom: -18px;
     left: 0;
   }
-
 
   .features__wrapper {
     width: 87%;

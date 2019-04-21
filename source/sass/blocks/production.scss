@@ -65,7 +65,16 @@
 .production__wrapper {
   width: 81%;
   margin: 0 auto;
-  padding-bottom: 58px;
+  margin-bottom: 58px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.production__wrapper:hover {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.production__wrapper:active {
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 .production__button {
@@ -80,7 +89,7 @@
   height: 100%;
 }
 
-.production__picture picture {
+.production__image {
   display: flex;
   width: 100%;
   height: 100%;
@@ -98,7 +107,7 @@
     width: 87%;
     display: flex;
     flex-direction: column;
-    padding-bottom: 62px;
+    margin-bottom: 62px;
   }
 
   .production__picture {
@@ -140,7 +149,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
-    padding-bottom: 107px;
+    margin-bottom: 107px;
   }
 
   .production__description {
