@@ -58,14 +58,14 @@
   height: 457px;
 }
 
-.contacts__map-picture picture {
+.contacts__picture {
   display: flex;
   z-index: 1;
   margin: 0 auto;
   position: relative;
 }
 
-.contacts__map-picture picture::after {
+.contacts__picture::after {
   content: "";
   position: absolute;
   width: 67px;
@@ -184,7 +184,7 @@
     margin-bottom: 55px;
   }
 
-  .contacts__map-picture picture::after {
+  .contacts__picture::after {
     top: 138px;
     left: 364px;
   }
@@ -254,7 +254,7 @@
     padding-bottom: 105px;
   }
 
-  .contacts__map-picture picture::after {
+  .contacts__picture::after {
     top: 146px;
     left: 238px;
   }
