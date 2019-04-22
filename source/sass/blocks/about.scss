@@ -22,55 +22,59 @@
   position: relative;
 }
 
-.about__item svg {
+.about__item::before {
   position: absolute;
   content: "";
-
-  path {
-    fill: #63d1bb;
-  }
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
-.about__item--eco svg {
+.about__item--eco::before {
   width: 32px;
   height: 37px;
   top: 14px;
   left: 8px;
+  background-image: url("../img/icon-feature-flower.svg");
 }
 
-.about__item--scandinavian svg {
+.about__item--scandinavian::before {
   width: 47px;
   height: 27px;
   top: 15px;
   left: 0;
+  background-image: url("../img/icon-feature-money.svg");
 }
 
-.about__item--likes svg {
+.about__item--likes::before {
   width: 34px;
   height: 27px;
   top: 20px;
   left: 7px;
+  background-image: url("../img/icon-feature-heart.svg");
 }
 
-.about__item--handmade svg {
+.about__item--handmade::before {
   width: 35px;
   height: 34px;
   top: 17px;
   left: 3px;
+  background-image: url("../img/icon-feature-ball.svg");
 }
 
-.about__item--native svg {
+.about__item--native::before {
   width: 55px;
   height: 23px;
   top: 17px;
   left: -5px;
+  background-image: url("../img/icon-feature-rocket.svg");
 }
 
-.about__item--gift svg {
+.about__item--gift::before {
   width: 33px;
   height: 32px;
   top: 16px;
   left: 3px;
+  background-image: url("../img/icon-feature-gift.svg");
 }
 
 .about__description {
@@ -113,27 +117,27 @@
     padding-bottom: 27px;
   }
 
-  .about__item--eco svg {
+  .about__item--eco::before {
     top: 32px;
   }
 
-  .about__item--scandinavian svg {
+  .about__item--scandinavian::before {
     top: 33px;
   }
 
-  .about__item--likes svg {
+  .about__item--likes::before {
     top: 38px;
   }
 
-  .about__item--handmade svg {
+  .about__item--handmade::before {
     top: 35px;
   }
 
-  .about__item--native svg {
+  .about__item--native::before {
     top: 35px;
   }
 
-  .about__item--gift svg {
+  .about__item--gift::before {
     top: 34px;
   }
 

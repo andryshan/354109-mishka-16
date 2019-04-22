@@ -62,37 +62,31 @@
   left: 0;
 }
 
-.features__item--interior svg {
+.features__item--interior .features__icon-interior {
   position: absolute;
   content: "";
   width: 40px;
   height: 62px;
   top: 24px;
   right: 36px;
-
-  path {
-    fill: #3bb09d;
-  }
+  fill: #3bb09d;
 }
 
-.features__item--toys svg {
+.features__item--toys .features__icon-toy {
   position: absolute;
   content: "";
   width: 60px;
   height: 60px;
   top: 19px;
   right: 27px;
-
-  path {
-    fill: #35a999;
-  }
+  fill: #35a999;
 }
 
-.features__item--interior:hover svg {
+.features__item--interior:hover .features__icon-interior {
   top: 19px;
 }
 
-.features__item--toys:hover svg {
+.features__item--toys:hover .features__icon-toy {
   top: 14px;
 }
 
@@ -100,13 +94,13 @@
   color: #8be2d0;
 }
 
-.features__item:hover svg {
-  path {
-    fill: #29a592;
-  }
+.features__item:hover .features__icon-toy,
+.features__item:hover .features__icon-interior {
+  fill: #29a592;
 }
 
-.features__item:active svg {
+.features__item:active .features__icon-toy,
+.features__item:active .features__icon-interior {
   opacity: 0.3;
 }
 
@@ -206,20 +200,20 @@
     padding: 22px 0 32px 36px;
   }
 
-  .features__item--interior:hover svg {
+  .features__item--interior:hover .features__icon-interior {
     top: 24px;
   }
 
-  .features__item--toys:hover svg {
+  .features__item--toys:hover .features__icon-toy {
     top: 26px;
   }
 
-  .features__item--interior svg {
+  .features__item--interior .features__icon-interior {
     top: 29px;
     right: 36px;
   }
 
-  .features__item--toys svg {
+  .features__item--toys .features__icon-toy {
     top: 31px;
     right: 34px;
   }
