@@ -6,6 +6,8 @@
   line-height: 24px;
   font-weight: bold;
   display: flex;
+  flex-wrap: wrap;
+  width: 70%;
 }
 
 .special-list__link {
@@ -42,7 +44,7 @@
     margin-right: auto;
   }
 
-  .special-list__item:first-child {
+  .special-list__item {
     margin-right: 62px;
   }
 }

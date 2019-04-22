@@ -53,13 +53,14 @@
   position: fixed;
   z-index: 10;
   top: 30%;
-  display: none;
+  display: flex;
   left: 50%;
   margin-left: -160px;
 }
 
 .modal--show {
   display: flex;
+  animation: appearance 0.2s;
 }
 
 .modal-size__option {
