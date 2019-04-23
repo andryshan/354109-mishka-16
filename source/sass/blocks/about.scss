@@ -22,59 +22,64 @@
   position: relative;
 }
 
-.about__item::before {
+.about__icon-flower {
   position: absolute;
   content: "";
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.about__item--eco::before {
+  fill: #63d1bb;
   width: 32px;
   height: 37px;
   top: 14px;
   left: 8px;
-  background-image: url("../img/icon-feature-flower.svg");
 }
 
-.about__item--scandinavian::before {
+.about__icon-money {
+  position: absolute;
+  content: "";
+  fill: #63d1bb;
   width: 47px;
   height: 27px;
   top: 15px;
   left: 0;
-  background-image: url("../img/icon-feature-money.svg");
 }
 
-.about__item--likes::before {
+.about__icon-heart {
+  position: absolute;
+  content: "";
+  fill: #63d1bb;
   width: 34px;
   height: 27px;
   top: 20px;
   left: 7px;
-  background-image: url("../img/icon-feature-heart.svg");
 }
 
-.about__item--handmade::before {
+.about__icon-ball {
+  position: absolute;
+  content: "";
+  fill: #63d1bb;
   width: 35px;
   height: 34px;
   top: 17px;
   left: 3px;
-  background-image: url("../img/icon-feature-ball.svg");
 }
 
-.about__item--native::before {
+.about__icon-rocket {
+  position: absolute;
+  content: "";
+  fill: #63d1bb;
   width: 55px;
   height: 23px;
   top: 17px;
   left: -5px;
-  background-image: url("../img/icon-feature-rocket.svg");
 }
 
-.about__item--gift::before {
+.about__icon-gift {
+  position: absolute;
+  content: "";
+  fill: #63d1bb;
   width: 33px;
   height: 32px;
   top: 16px;
   left: 3px;
-  background-image: url("../img/icon-feature-gift.svg");
 }
 
 .about__description {
@@ -117,30 +122,29 @@
     padding-bottom: 27px;
   }
 
-  .about__item--eco::before {
+  .about__icon-flower {
     top: 32px;
   }
 
-  .about__item--scandinavian::before {
+  .about__icon-money {
     top: 33px;
   }
 
-  .about__item--likes::before {
+  .about__icon-heart {
     top: 38px;
   }
 
-  .about__item--handmade::before {
+  .about__icon-ball {
     top: 35px;
   }
 
-  .about__item--native::before {
+  .about__icon-rocket {
     top: 35px;
   }
 
-  .about__item--gift::before {
+  .about__icon-gift {
     top: 34px;
   }
-
 
   .about__item--handmade {
     order: 1;
