@@ -212,7 +212,7 @@
   position: relative;
 }
 
-.filters__field--phone svg {
+.filters__icon-phone {
   content: "";
   position: absolute;
   top: 1px;
@@ -222,24 +222,19 @@
   fill: #cccccc;
 }
 
-.filters__field--email svg {
+.filters__icon-email {
   content: "";
   position: absolute;
   top: 1px;
   right: 4px;
   width: 32px;
   height: 32px;
-}
-
-.filters__field--email path {
   fill: #cccccc;
 }
 
-.filters__input:hover ~ svg,
-.filters__input:active ~ svg {
-  path {
-    fill: #62d1ba;
-  }
+.filters__input:hover ~ .filters__icon-phone,
+.filters__input:hover ~ .filters__icon-email {
+  fill: #62d1ba;
 }
 
 @-moz-document url-prefix("") {
@@ -443,12 +438,12 @@
     top: 35px;
   }
 
-  .filters__field--phone svg {
+  .filters__icon-phone {
     top: 11px;
     right: 26px;
   }
 
-  .filters__field--email svg {
+  .filters__icon-email {
     top: 11px;
     right: 22px;
   }
@@ -504,11 +499,11 @@
     left: 60px;
   }
 
-  .filters__field--phone svg {
+  .filters__icon-phone {
     right: 8px;
   }
 
-  .filters__field--email svg {
+  .filters__icon-email {
     right: 4px;
   }
 
