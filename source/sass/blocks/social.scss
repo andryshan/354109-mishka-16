@@ -31,11 +31,15 @@
   padding-right: 0;
 }
 
-.social__link:hover path {
+.social__link:hover .social__icon-insta,
+.social__link:hover .social__icon-fb,
+.social__link:hover .social__icon-twitter {
   fill: #46c1ae;
 }
 
-.social__link:active path {
+.social__link:active .social__icon-insta,
+.social__link:active .social__icon-fb,
+.social__link:active .social__icon-twitter {
   opacity: 0.3;
 }
 

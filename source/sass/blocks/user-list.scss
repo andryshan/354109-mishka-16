@@ -42,10 +42,7 @@
 .user-list__search:hover .user-list__search-icon,
 .user-list__bracket:hover .user-list__basket-icon {
   opacity: 1;
-
-  path {
-    fill: #63d1bb;
-  }
+  fill: #63d1bb;
 }
 
 .user-list__search:active .user-list__search-icon,
@@ -60,6 +57,10 @@
     margin-left: auto;
     flex-wrap: wrap;
     align-items: flex-start;
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      align-items: stretch;
+    }
   }
 
   .user-list__item .user-list__search {

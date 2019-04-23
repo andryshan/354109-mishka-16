@@ -18,16 +18,21 @@
   justify-content: center;
 }
 
-.copyright__link img {
+.copyright__link .copyright__logo-htmlacademy {
   align-self: flex-start;
+  fill: #63d1bb;
+}
+
+.copyright__link:hover .copyright__logo-htmlacademy {
+  fill: #46c1ae;
 }
 
 .copyright__link:active .copyright__text {
-  color: rgba(#000000, 0.6);
+  color: rgba(#000000, 0.3);
 }
 
-.copyright__link:active img {
-  opacity: 0.6;
+.copyright__link:active .copyright__logo-htmlacademy {
+  opacity: 0.3;
 }
 
 @media (min-width: 768px) {
