@@ -57,6 +57,10 @@
     margin-left: auto;
     flex-wrap: wrap;
     align-items: flex-start;
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      align-items: stretch;
+    }
   }
 
   .user-list__item .user-list__search {
