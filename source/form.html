@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Мишка - Интернет-магазин игрушек ручной работы</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -28,7 +30,7 @@
                 <a href="catalog.html" class="site-list__link">Каталог товаров</a>
               </li>
               <li class="site-list__item">
-                <a href="form.html" class="site-list__link">Вязание на заказ</a>
+                <a class="site-list__link site-list__link--active">Вязание на заказ</a>
               </li>
             </ul>
             <ul class="main-nav__list user-list">
@@ -68,10 +70,8 @@
           </p>
           <form class="form__filters filters" method="get" action="https://echo.htmlacademy.ru">
             <div class="filters__container">
-              <fieldset class="filters__field filters__field--type">
-                <legend class="filters__characteristic">
-                  <span class="filters__characteristic-title">Тип</span>
-                </legend>
+              <div class="filters__field filters__field--type">
+                <span class="filters__characteristic-title">Тип</span>
                 <div class="filters__list">
                   <label class="filters__option filters__option--area">
                     <input type="radio" class="filters__input filters__input--radio visually-hidden" name="choice" value="interior" checked="">
@@ -82,14 +82,12 @@
                     <span class="filters__value">Детская игрушка</span>
                   </label>
                 </div>
-              </fieldset>
+              </div>
             </div>
             <div class="filters--background">
               <div class="filters__container">
-                <fieldset class="filters__field filters__field--colors">
-                  <legend class="filters__characteristic">
-                    <span class="filters__characteristic-title">Цвет</span>
-                  </legend>
+                <div class="filters__field filters__field--colors">
+                  <span class="filters__characteristic-title">Цвет</span>
                   <div class="filters__list filters__list--colors">
                     <label class="filters__option filters__option--area">
                       <input type="checkbox" class="filters__input filters__input--checkbox visually-hidden" name="white" checked="">
@@ -116,14 +114,12 @@
                       <span class="filters__value">Оранжевый</span>
                     </label>
                   </div>
-                </fieldset>
+                </div>
               </div>
             </div>
             <div class="filters__container">
-              <fieldset class="filters__field filters__field--fio">
-                <legend class="filters__characteristic">
-                  <span class="filters__characteristic-title">ФИО</span>
-                </legend>
+              <div class="filters__field filters__field--fio">
+                <span class="filters__characteristic-title">ФИО</span>
                 <div class="filters__list">
                   <label class="filters__option filters__option--fio">
                     <span class="filters__value filters__value--fio">Имя:</span>
@@ -138,14 +134,12 @@
                     <input type="text" class="filters__input filters__input--text" placeholder="Отчество, если желаете" name="patronymic">
                   </label>
                 </div>
-              </fieldset>
+              </div>
             </div>
             <div class="filters--background">
               <div class="filters__container">
-                <fieldset class="filters__field filters__field--phone">
-                  <legend class="filters__characteristic">
-                    <span class="filters__characteristic-title">ТЕЛ</span>
-                  </legend>
+                <div class="filters__field filters__field--phone">
+                  <span class="filters__characteristic-title">ТЕЛ</span>
                   <div class="filters__list">
                     <label class="filters__option">
                       <input type="tel" class="filters__input filters__input--phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="phone" required="">
@@ -154,11 +148,9 @@
                       </svg>
                     </label>
                   </div>
-                </fieldset>
-                <fieldset class="filters__field filters__field--email">
-                  <legend class="filters__characteristic">
-                    <span class="filters__characteristic-title">E-MAIL</span>
-                  </legend>
+                </div>
+                <div class="filters__field filters__field--email">
+                  <span class="filters__characteristic-title">E-MAIL</span>
                   <div class="filters__list">
                     <label class="filters__option">
                       <input type="email" class="filters__input filters__input--email" placeholder="Ваш Email*" name="email" required="">
@@ -167,20 +159,18 @@
                       </svg>
                     </label>
                   </div>
-                </fieldset>
+                </div>
               </div>
             </div>
             <div class="filters__container">
-              <fieldset class="filters__field filters__field--extra">
-                <legend class="filters__characteristic">
-                  <span class="filters__characteristic-title">ДОП</span>
-                </legend>
+              <div class="filters__field filters__field--extra">
+                <span class="filters__characteristic-title">ДОП</span>
                 <div class="filters__list">
                   <label class="filters__option">
                     <textarea class="filters__input filters__input--area" name="add" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                   </label>
                 </div>
-              </fieldset>
+              </div>
             </div>
             <div class="filters__bottom filters__container">
               <p class="filters__description">*Поля обязательны для заполнения</p>
