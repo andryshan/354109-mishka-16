@@ -29,6 +29,11 @@
   box-sizing: border-box;
 }
 
+.catalog__wrapper-basket-price {
+  position: relative;
+  border-top: 1px solid #ececec;
+}
+
 .catalog__link {
   color: #000000;
   font-size: 17px;
@@ -71,10 +76,10 @@
   font-size: 15px;
   line-height: 24px;
   font-weight: bold;
-  border-top: 1px solid #ececec;
   padding-top: 21px;
   padding-bottom: 27px;
   position: relative;
+  width: 180px;
 }
 
 .catalog__basket {
@@ -83,6 +88,7 @@
   width: 20px;
   height: 19px;
   right: 0;
+  top: 21px;
 }
 
 .catalog__basket .catalog__basket-icon {
@@ -147,6 +153,11 @@
   .catalog__price {
     font-size: 17px;
     line-height: 24px;
+    padding-left: 4px;
+  }
+
+  .catalog__basket {
+    right: 5px;
   }
 
   .catalog__title::after {
@@ -204,8 +215,11 @@
     width: 1050px;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
     padding-top: 116px;
+  }
+
+  .catalog__description {
+    width: 250px;
   }
 
   .catalog__title {
@@ -237,6 +251,10 @@
   .catalog__title::after {
     bottom: -4px;
     background-size: 1150px;
+  }
+
+  .catalog__price {
+    padding-left: 0;
   }
 
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {

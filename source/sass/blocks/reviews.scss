@@ -103,6 +103,7 @@
 .reviews__button {
   width: 100%;
   padding: 14px 0 14px 0;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -185,7 +186,7 @@
 
   .reviews__wrapper::after {
     bottom: -83px;
-    background-size: 781px;
+    background-size: 768px;
   }
 
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {

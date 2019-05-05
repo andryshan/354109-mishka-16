@@ -528,6 +528,18 @@
     padding-right: 175px;
   }
 
+  .filters__field--fio .filters__list {
+    padding-top: 20px;
+  }
+
+  .filters__field--fio {
+    margin-bottom: 34px;
+  }
+
+  .filters__field--fio .filters__value {
+    padding: 24px 0 18px;
+  }
+
   .filters__button {
     margin-right: auto;
     margin-left: 175px;
@@ -603,6 +615,10 @@
   @-moz-document url-prefix("") {
     .filters__field--extra {
       margin-bottom: 45px;
+    }
+
+    .filters__option--fio {
+      margin-bottom: 17px;
     }
   }
 }
