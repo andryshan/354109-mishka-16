@@ -227,14 +227,15 @@
 }
 
 .filters__field--phone .filters__option,
-.filters__field--email .filters__option {
+.filters__field--email .filters__option,
+.filters__field--extra .filters__option {
   position: relative;
 }
 
 .filters__icon-phone {
   content: "";
   position: absolute;
-  top: 1px;
+  top: 40px;
   right: 8px;
   width: 25px;
   height: 24px;
@@ -244,7 +245,7 @@
 .filters__icon-email {
   content: "";
   position: absolute;
-  top: 1px;
+  top: 40px;
   right: 4px;
   width: 32px;
   height: 32px;
@@ -310,11 +311,11 @@
   }
 
   .filters__field--phone .filters__characteristic-title {
-    margin-top: 70px;
+    margin-top: 27px;
   }
 
   .filters__field--email .filters__characteristic-title {
-    margin-top: 41px;
+    margin-top: 27px;
   }
 
   .filters__field--extra .filters__characteristic-title {
@@ -340,10 +341,6 @@
     margin-right: 25px;
   }
 
-  .filters__input--area {
-    width: 100%;
-  }
-
   .filters__bottom {
     display: flex;
   }
@@ -362,7 +359,7 @@
     padding-bottom: 8px;
   }
 
-  .filters--background {
+  .filters__background {
     background-color: #f1f1f1;
   }
 
@@ -452,6 +449,8 @@
     padding: 18px 15px 15px 17px;
     font-size: 19px;
     line-height: 18px;
+    width: auto;
+    flex-grow: 1;
   }
 
   .filters__field--fio {
@@ -486,12 +485,18 @@
 
   .filters__field--extra {
     padding-top: 51px;
-    margin-bottom: 45px;
+    margin-bottom: 54px;
   }
 
   .filters__container {
     width: 87%;
     margin: 0 auto;
+  }
+
+  .filters__field--phone .filters__option,
+  .filters__field--email .filters__option,
+  .filters__field--extra .filters__option {
+    display: flex;
   }
 
   @-moz-document url-prefix("") {
@@ -518,7 +523,12 @@
     }
 
     .filters__field--extra {
-      margin-bottom: 49px;
+      margin-bottom: 54px;
+    }
+
+    .filters__field--email .filters__characteristic-title,
+    .filters__field--phone .filters__characteristic-title {
+      margin-top: 19px;
     }
   }
 }
@@ -579,7 +589,7 @@
   }
 
   .filters__field--extra {
-    margin-bottom: 41px;
+    margin-bottom: 50px;
   }
 
   .filters__field .filters__characteristic-title {
@@ -601,11 +611,11 @@
   }
 
   .filters__field--phone .filters__characteristic-title {
-    margin-top: 70px;
+    margin-top: 25px;
   }
 
   .filters__field--email .filters__characteristic-title {
-    margin-top: 41px;
+    margin-top: 28px;
   }
 
   .filters__field--extra .filters__characteristic-title {
@@ -614,11 +624,16 @@
 
   @-moz-document url-prefix("") {
     .filters__field--extra {
-      margin-bottom: 45px;
+      margin-bottom: 50px;
     }
 
     .filters__option--fio {
       margin-bottom: 17px;
+    }
+
+    .filters__field--email .filters__characteristic-title,
+    .filters__field--phone .filters__characteristic-title {
+      margin-top: 19px;
     }
   }
 }

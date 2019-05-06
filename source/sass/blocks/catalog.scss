@@ -20,7 +20,7 @@
   width: 81%;
 }
 
-.catalog__wrapper-title-price {
+.catalog__wrapper-description {
   order: 1;
   border: 1px solid #ededed;
   padding-top: 25px;
@@ -197,7 +197,7 @@
     height: 100%;
   }
 
-  .catalog__wrapper-title-price {
+  .catalog__wrapper-description {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -239,7 +239,7 @@
     width: auto;
   }
 
-  .catalog__wrapper-title-price {
+  .catalog__wrapper-description {
     width: auto;
   }
 
