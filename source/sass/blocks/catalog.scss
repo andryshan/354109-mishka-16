@@ -30,8 +30,8 @@
 }
 
 .catalog__wrapper-basket-price {
-  position: relative;
   border-top: 1px solid #ececec;
+  display: flex;
 }
 
 .catalog__link {
@@ -80,15 +80,14 @@
   padding-bottom: 27px;
   position: relative;
   width: 180px;
+  margin-right: auto;
 }
 
 .catalog__basket {
-  content: "";
-  position: absolute;
   width: 20px;
   height: 19px;
-  right: 0;
-  top: 21px;
+  display: flex;
+  margin-top: 23px;
 }
 
 .catalog__basket .catalog__basket-icon {
@@ -157,7 +156,7 @@
   }
 
   .catalog__basket {
-    right: 5px;
+    margin-right: 5px;
   }
 
   .catalog__title::after {
