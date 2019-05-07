@@ -26,11 +26,15 @@
     align-self: center;
   }
 
-  .page-footer__logo:hover .page-footer__logo-footer {
+  .page-footer__logo .page-footer__pic {
+    transition: fill 0.3s ease;
+  }
+
+  .page-footer__logo:hover .page-footer__pic {
     fill: #46c1ae;
   }
 
-  .page-footer__logo:active .page-footer__logo-footer {
+  .page-footer__logo:active .page-footer__pic {
     opacity: 0.3;
   }
 }

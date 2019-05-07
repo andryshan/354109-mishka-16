@@ -15,12 +15,12 @@
     <header class="page-header page-header--form">
       <div class="page-header__wrapper">
         <nav class="main-nav main-nav--closed main-nav--nojs">
-          <p class="page-header__logo-picture">
-            <a href="index.html" class="page-header__logo">
+          <p class="main-nav__logo-picture">
+            <a href="index.html" class="main-nav__logo">
               <picture>
                 <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-                <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип магазина Мишка" width="86" height="35">
+                <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Логотип магазина Мишка">
               </picture>
             </a>
           </p>
@@ -84,7 +84,7 @@
                 </div>
               </div>
             </div>
-            <div class="filters--background">
+            <div class="filters__background">
               <div class="filters__container">
                 <div class="filters__field filters__field--colors">
                   <span class="filters__characteristic-title">Цвет</span>
@@ -136,12 +136,12 @@
                 </div>
               </div>
             </div>
-            <div class="filters--background">
+            <div class="filters__background">
               <div class="filters__container">
                 <div class="filters__field filters__field--phone">
-                  <span class="filters__characteristic-title">ТЕЛ</span>
                   <div class="filters__list">
                     <label class="filters__option">
+                      <span class="filters__characteristic-title">ТЕЛ</span>
                       <input type="tel" class="filters__input filters__input--phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="phone" required="">
                       <svg class="filters__icon-phone" width="25" height="24" focusable="false">
                         <use xlink:href="#icon-phone"></use>
@@ -150,9 +150,9 @@
                   </div>
                 </div>
                 <div class="filters__field filters__field--email">
-                  <span class="filters__characteristic-title">E-MAIL</span>
                   <div class="filters__list">
                     <label class="filters__option">
+                      <span class="filters__characteristic-title">E-MAIL</span>
                       <input type="email" class="filters__input filters__input--email" placeholder="Ваш Email*" name="email" required="">
                       <svg class="filters__icon-email" width="32" height="32" focusable="false">
                         <use xlink:href="#icon-mail"></use>
@@ -164,9 +164,9 @@
             </div>
             <div class="filters__container">
               <div class="filters__field filters__field--extra">
-                <span class="filters__characteristic-title">ДОП</span>
                 <div class="filters__list">
                   <label class="filters__option">
+                    <span class="filters__characteristic-title">ДОП</span>
                     <textarea class="filters__input filters__input--area" name="add" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                   </label>
                 </div>
@@ -183,7 +183,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a href="#" class="page-footer__logo">
-          <svg role="img" aria-label="Логотип магазина Мишка" focusable="false" width="102" height="34" class="page-footer__logo-footer">
+          <svg role="img" aria-label="Логотип магазина Мишка" focusable="false" width="102" height="34" class="page-footer__pic">
             <use xlink:href="#icon-logo-footer"></use>
           </svg>
         </a>
