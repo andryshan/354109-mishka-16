@@ -44,6 +44,13 @@
   }
 }
 
+.reviews__prev:active,
+.reviews__next:active {
+  &::before {
+    opacity: 0.3;
+  }
+}
+
 .reviews__wrapper {
   width: 81%;
   margin: 0 auto;

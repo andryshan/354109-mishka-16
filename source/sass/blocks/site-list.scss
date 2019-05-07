@@ -37,7 +37,7 @@
 
 @media (min-width: 768px) {
   .site-list {
-    width: 320px;
+    width: 60%;
     display: flex;
     order: 1;
     font-size: 15px;
@@ -62,10 +62,10 @@
     font-size: 17px;
     line-height: 24px;
     order: -1;
-    width: 415px;
+    width: 420px;
     padding-top: 0;
     padding-bottom: 0;
-    margin-right: 3%;
+    margin-right: 26px;
   }
 
   .site-list__item .site-list__link {
@@ -74,14 +74,29 @@
 
   .site-list__item:nth-child(2n) .site-list__link {
     padding-left: 34px;
+    width: 158px;
   }
 
   .site-list__item:first-child {
     margin-right: 0;
-    border-right: 1px solid #ececec;
   }
 
   .site-list__item:nth-child(2n-1) {
     margin-right: 0;
+  }
+
+  .site-list__item:first-child .site-list__link {
+    position: relative;
+    width: 149px;
+  }
+
+  .site-list__item:first-child .site-list__link::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 88px;
+    background-color: #eeeeee;
+    right: 0;
+    top: 0;
   }
 }
