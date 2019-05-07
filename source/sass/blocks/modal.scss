@@ -8,3 +8,8 @@
   background-color: rgba(255, 255, 255, 0.9);
   display: none;
 }
+
+.modal--show {
+  display: flex;
+  animation: appearance 0.2s;
+}
