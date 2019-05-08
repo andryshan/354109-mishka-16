@@ -266,6 +266,11 @@
   align-items: flex-start;
 }
 
+.filters__input--phone,
+.filters__input--email {
+  padding-right: 45px;
+}
+
 @-moz-document url-prefix("") {
   .filters__field--extra .filters__characteristic-title {
     padding-top: 10px;
@@ -350,6 +355,7 @@
     order: -1;
     margin-right: auto;
     margin-bottom: 50px;
+    align-self: flex-start;
   }
 
   .filters__description {
@@ -357,6 +363,7 @@
     line-height: 30px;
     padding-top: 8px;
     padding-bottom: 8px;
+    width: 302px;
   }
 
   .filters__background {
@@ -497,6 +504,11 @@
   .filters__field--email .filters__option,
   .filters__field--extra .filters__option {
     display: flex;
+  }
+
+  .filters__option .filters__input--phone,
+  .filters__option .filters__input--email {
+    padding-right: 70px;
   }
 
   @-moz-document url-prefix("") {

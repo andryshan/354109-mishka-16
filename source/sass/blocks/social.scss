@@ -13,6 +13,7 @@
   display: flex;
   width: 155px;
   box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 .social__link {
@@ -27,7 +28,7 @@
   padding-right: 30px;
 }
 
-.social__item:last-child {
+.social__item:nth-child(3n) {
   padding-right: 0;
 }
 

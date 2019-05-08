@@ -1,13 +1,18 @@
 .form__title {
-  margin: 0;
+  margin: 0 auto;
   font-size: 27px;
   line-height: 30px;
   font-weight: bold;
-  background-color: #f1f1f1;
   display: flex;
   justify-content: center;
   padding-top: 71px;
   padding-bottom: 76px;
+  width: 81%;
+  text-align: center;
+}
+
+.form__wrapper-title {
+  background-color: #f1f1f1;
 }
 
 .form__description {
@@ -41,9 +46,14 @@
     padding-top: 34px;
     padding-bottom: 86px;
     position: relative;
+    width: 87%;
   }
 
-  .form__title::after {
+  .form__wrapper-title {
+    position: relative;
+  }
+
+  .form__wrapper-title::after {
     position: absolute;
     content: "";
     background-image: url("../img/bg-zigzag-fill.svg");
@@ -68,6 +78,7 @@
     line-height: 57px;
     padding-top: 47px;
     padding-bottom: 101px;
+    width: 1050px;
   }
 
   .form__description {
@@ -75,7 +86,7 @@
     padding-top: 78px;
   }
 
-  .form__title::after {
+  .form__wrapper-title::after {
     background-size: 1150px;
   }
 }

@@ -146,10 +146,10 @@
 @media (min-width: 1150px) {
   .production__wrapper {
     width: 1050px;
-    flex-direction: row;
     flex-wrap: wrap;
     position: relative;
     margin-bottom: 107px;
+    align-items: flex-end;
   }
 
   .production__description {
@@ -160,22 +160,27 @@
 
   .production__button {
     width: 230px;
-    margin: 0 0 0 77px;
+    margin: 0 0 45px 39px;
   }
 
   .production__right {
     flex-grow: 1;
     border: 1px solid #ededed;
-    padding-top: 170px;
+    padding: 26px 37px 12px 38px;
+    border-top: none;
   }
 
   .production__title {
-    position: absolute;
-    top: 98px;
-    right: 140px;
-    border: none;
+    border-left: 1px solid #ededed;
+    border-bottom: none;
     width: 150px;
     padding: 0;
+    border-top: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+    padding-top: 96px;
+    padding-right: 140px;
+    padding-left: 76px;
+    position: relative;
   }
 
   .production__video {
@@ -184,7 +189,13 @@
   }
 
   .production__title::before {
-    left: 2px;
-    top: -54px;
+    left: 79px;
+    top: 43px;
+  }
+
+  .production__picture {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
