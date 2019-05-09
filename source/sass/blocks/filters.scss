@@ -271,6 +271,12 @@
   padding-right: 45px;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .filters__field--type .filters__option:first-child {
+    width: 165px;
+  }
+}
+
 @-moz-document url-prefix("") {
   .filters__field--extra .filters__characteristic-title {
     padding-top: 10px;
@@ -509,6 +515,12 @@
   .filters__option .filters__input--phone,
   .filters__option .filters__input--email {
     padding-right: 70px;
+  }
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .filters__field--type .filters__option:first-child {
+      width: auto;
+    }
   }
 
   @-moz-document url-prefix("") {
