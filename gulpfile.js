@@ -15,6 +15,8 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var htmlmin = require("gulp-htmlmin");
+var concat = require("gulp-concat");
+var order = require("gulp-order");
 var uglify = require("gulp-uglify");
 var server = require("browser-sync").create();
 
@@ -26,6 +28,7 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
@@ -71,7 +74,6 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
     "source/*.ico"
   ], {
     base: "source"
@@ -79,11 +81,22 @@ gulp.task("copy", function () {
   .pipe(gulp.dest("build"));
 });
 
+gulp.task("js-concat", function () {
+  return gulp.src(["source/js/modules/**/*.js"])
+    .pipe(order([
+      '*.js'
+    ]))
+    .pipe(concat('app.js'))
+    .pipe(gulp.dest('source/js'));
+});
+
 gulp.task("uglify", function () {
   return gulp.src("source/js/*.js")
     .pipe(uglify())
     .pipe(gulp.dest("build/js/"));
 });
+
+gulp.task("js", gulp.series("js-concat", "uglify"));
 
 gulp.task("clean", function () {
   return del("build");
@@ -108,5 +121,5 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean", "copy", "uglify", "css", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "js", "css", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));

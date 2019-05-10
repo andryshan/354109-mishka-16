@@ -120,6 +120,7 @@
   width: auto;
   display: flex;
   flex-direction: column;
+  background-color: #f9f9f9;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% -18px;
@@ -127,12 +128,6 @@
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
     background-size: 575px 373px;
-  }
-}
-
-@media (min-width: 321px) and (max-width: 767px) {
-  .features__title br {
-    display: none;
   }
 }
 

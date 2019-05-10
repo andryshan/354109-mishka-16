@@ -121,10 +121,11 @@
   }
 
   .reviews {
+    background: linear-gradient(to right, #e7e7e7 350px, transparent 350px);
     background-image: url("../img/review@1x.jpg");
     background-position: top left;
     background-repeat: no-repeat;
-    padding-bottom: 90px;
+    margin-bottom: 90px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/review@2x.jpg");
@@ -158,6 +159,7 @@
     position: relative;
     padding-left: 175px;
     box-sizing: border-box;
+    background: linear-gradient(to right, #e7e7e7 350px, transparent 350px);
     background-image: url("../img/review@1x.jpg");
     background-position: top left;
     background-repeat: no-repeat;
